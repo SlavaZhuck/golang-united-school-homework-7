@@ -113,9 +113,13 @@ func TestSet(t *testing.T) {
 	m ,_ := New(initValue)
 
 	var setValue = 55;
+	// Test case 1: Correct input data
 	res := m.Set(1, 1, setValue)
-	// if err != nil {
-		fmt.Println("Res is:", res)
-		// t.Errorf("Problem during creation of matrix: %s", err.Error())
-	// }
+	fmt.Println("Res is:", res)
+
+	// Test case 2: Incorrect input data
+	res = m.Set(255, -1, setValue)
+	fmt.Println("Res is:", res)
+
+
 }
