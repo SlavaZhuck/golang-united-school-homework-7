@@ -46,7 +46,7 @@ func TestRows(t *testing.T) {
 
 	temp := m.Rows()
 	// if err != nil {
-		fmt.Println("Error is:", temp)
+		fmt.Println("Res is:", temp)
 		// t.Errorf("Problem during creation of matrix: %s", err.Error())
 	// }
 }
@@ -60,7 +60,21 @@ func TestCols(t *testing.T) {
 
 	temp := m.Cols()
 	// if err != nil {
-		fmt.Println("Error is:", temp)
+		fmt.Println("Res is:", temp)
+		// t.Errorf("Problem during creation of matrix: %s", err.Error())
+	// }
+}
+
+func TestSet(t *testing.T) {
+
+	var initValue string = "0 0 0\n1 1 1\n2 2 2"
+
+	m ,_ := New(initValue)
+
+	var setValue = 55;
+	res := m.Set(1, 1, setValue)
+	// if err != nil {
+		fmt.Println("Res is:", res)
 		// t.Errorf("Problem during creation of matrix: %s", err.Error())
 	// }
 }
