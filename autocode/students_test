@@ -49,7 +49,18 @@ func TestRows(t *testing.T) {
 		fmt.Println("Error is:", temp)
 		// t.Errorf("Problem during creation of matrix: %s", err.Error())
 	// }
-		
-	
 }
 
+
+func TestCols(t *testing.T) {
+
+	var initValue string = "0 0 0\n1 1 1\n2 2 2"
+
+	m ,_ := New(initValue)
+
+	temp := m.Cols()
+	// if err != nil {
+		fmt.Println("Error is:", temp)
+		// t.Errorf("Problem during creation of matrix: %s", err.Error())
+	// }
+}
