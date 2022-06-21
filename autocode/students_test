@@ -34,10 +34,15 @@ func TestPeople(t *testing.T) {
 										{"Ben",  "Stiller", time.Now().Add(time.Second * 4) },
 										{"Adam", "Sendler", time.Now() },
 	},
-		"People mixed":               {
+		"People mixed1":               {
 										{"Cris", "Lambert", time.Now().Add(time.Second * 8) },
 										{"Adam", "Sendler", time.Now() },
 										{"Ben",  "Stiller", time.Now().Add(time.Second * 4) },
+	},
+		"People mixed2":               {
+										{"Adam", "Sendler", time.Now() },
+										{"Ben",  "Sendler",  time.Now() },
+										{"Cris", "Sendler", time.Now() },
 	},
 		"People same":               {
 										{"Adam", "Sendler", time.Now() },
